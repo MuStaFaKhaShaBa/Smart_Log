@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <!-- Google Font Source Sans Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
+        rel="stylesheet" />
+
+    <title>Log IN</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <div class="parent">
+
+                <h1>Log In Now</h1>
+
+                <div class="form-control" style="display: none;">
+                    <input type="text" name="u-name" id="input_name" title="name">
+                    <label for="input_email">Enter Your Name</label>
+                </div>
+                <div class="alert alert-name">
+                    <p></p>
+                </div>
+
+                <div class="form-control">
+                    <input type="email" name="u-email" id="input_email" title="email">
+                    <label for="input_email">Enter Your Email</label>
+                </div>
+                <div class="alert alert-email">
+                    <p></p>
+                </div>
+
+
+                <div class="form-control">
+                    <input type="password" name="u-password" id="input_password" title="password">
+                    <label for="input_email">Enter Password</label>
+                </div>
+                <div class="alert alert-password">
+                    <p></p>
+                </div>
+
+                <div class="submit">
+                    <p class="success" id="succMsg">Success</p>
+                    <input type="submit" value="Log In" id="logSubmit">
+                    <a href="./home.html" id="re-direct" title="re-direct" tabindex="545" hidden ></a>
+                </div>
+                <p id="log-up" class="log">
+                    Don't have an account?
+                    <button type="button">Sign Up</button>
+                </p>
+
+                <p id="log-in" class="log" style="display: none;">
+                    You have an account?
+                    <button type="button">Sign In</button>
+                </p>
+
+            </div>
+        </form>
+    </div>
+
+    <!-- Script -->
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
